@@ -1,0 +1,38 @@
+backend:
+    name: git-gateway
+    branch: publish
+    squash_merges: true
+
+publish_mode: editorial_workflow
+media_folder: 'static/img'
+site_url: https://MetalsTeam.pro
+logo_url: /img/icon.png
+
+slug:
+    encoding: 'ascii'
+    clean_accents: true
+    sanitize_replacement: '_'
+
+collections:
+    - name: 'team-member'
+      label: 'Team member'
+      folder: '_site/members'
+      create: true
+      slug: '{{slug}}'
+      fields:
+        - {label: "Name", name: "name", widget: "string"}
+        - {label: "Photo", name: "photo", widget: "image"}
+        - {label: "Bio", name: "bio", widget: "markdown"}
+        - label: "Links"
+          name: "links"
+          widget: "list"
+          required: false
+    - label: "Pages"
+      name: "pages"
+      files:
+        - label: "Home Page"
+          name: "home"
+          file: "site/content/home.md"
+          fields:
+            - {label: Title, name: title, widget: string}
+            - {label: Intro, name: intro, widget: markdown}
