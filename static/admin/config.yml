@@ -19,6 +19,7 @@ collections:
       folder: '_site/members'
       create: true
       slug: '{{slug}}'
+      identifier_field: 'name'
       fields:
         - {label: "Name", name: "name", widget: "string"}
         - {label: "Photo", name: "photo", widget: "image"}
