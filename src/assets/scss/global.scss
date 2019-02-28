@@ -1,18 +1,5 @@
 @import '__variables';
 
-html {
-    height: 100%;
-  }
-  
 body{
-    height: 100%;
-    background-color: $background-primary;
-}
-
-.outer-container{    
-    height: 100%;
-
-    .main-container{
-        height: 100%;
-    }
+    background-color: $foreground-secondary;
 }
