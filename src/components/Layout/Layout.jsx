@@ -1,13 +1,14 @@
 import React from 'react';
-import SEO from './SEO';
+import SEO from '../SEO/SEO';
+import Nav from '../Nav/Nav';
 
 const Layout = props => (
-	<React.Fragment>
+	<div id='outer-container'>
 		<SEO />
-		<div>Header</div>
-		<div>{props.children}</div>
+		<Nav></Nav>
+		<div id='main-container'>{props.children}</div>
 		<div>Footer</div>
-	</React.Fragment>
+	</div>
 );
 
 export function wrapWithComponent(WrappedComponent) {
