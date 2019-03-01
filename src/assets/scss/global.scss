@@ -1,5 +1,6 @@
 @import '__variables';
 
-body{
+html, body {
     background-color: $foreground-secondary;
+    overflow-x: hidden;
 }

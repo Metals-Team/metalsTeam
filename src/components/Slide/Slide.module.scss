@@ -1,0 +1,14 @@
+@import '../../assets/scss/_variables';
+
+.slide{
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0 0 8px 8px $background-primary inset;
+    overflow: hidden;
+
+    &-overlay{
+        @extend .slide;
+        position: absolute;
+        opacity: 0.7;
+    }
+}

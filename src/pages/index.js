@@ -1,6 +1,5 @@
 import React from 'react';
 import { wrapWithComponent } from '../components/Layout/Layout';
+import Home from '../components/Home/Home';
 
-const Index = props => <strong>Hello World!</strong>;
-
-export default wrapWithComponent(Index);
+export default wrapWithComponent(Home);
